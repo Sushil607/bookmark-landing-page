@@ -44,6 +44,21 @@ function showFeature(id) {
  * TODO : Make FAQ Accordion
  * **/
 
+const arrow = document.getElementsByClassName("fa-chevron-down");
+const answer = document.getElementsByClassName("answer");
+
+function toggleFAQ(id) {
+  for (i = 0; i < 4; i++) {
+    if (i === id) {
+      arrow[i].classList.toggle("expanded");
+      answer[i].classList.toggle("hidden");
+    } else {
+      arrow[i].classList.remove("expanded");
+      answer[i].classList.add("hidden");
+    }
+  }
+}
+
 /**
  * TODO : DO Form Validation
  * **/
