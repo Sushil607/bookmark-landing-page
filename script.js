@@ -62,3 +62,36 @@ function toggleFAQ(id) {
 /**
  * TODO : DO Form Validation
  * **/
+
+const form = document.getElementById("form");
+const email = document.getElementById("emailAddress");
+const errorIcon = document.getElementById("errorIcon");
+const emailError = document.getElementById("emailError");
+
+// function for validating email format
+function ValidateEmail(mail) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    return true;
+  }
+  return false;
+}
+
+// function for form validation
+form.addEventListener("submit", (e) => {
+  // prevent default
+  e.preventDefault();
+
+  // if there is no email
+  if (email.value.trim() === "") {
+    errorIcon.style.cssText = "opacity:1";
+    emailError.style.cssText = "opacity:1";
+    emailError.innerHTML = "Email cannot be empty";
+  } else if (!ValidateEmail(email.value)) {
+    errorIcon.style.cssText = "opacity:1";
+    emailError.style.cssText = "opacity:1";
+    emailError.innerHTML = "Whoops, make sure it's an email";
+  } else {
+    errorIcon.style.cssText = "opacity:0";
+    emailError.style.cssText = "opacity:0";
+  }
+});
