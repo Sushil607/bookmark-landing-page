@@ -48,12 +48,12 @@ button{
 **/
 
 h1{
-    margin: 1rem 0;
+    margin: 1.2rem 0;
     font-size: 2rem;
 }
 
 h2{
-    margin: 1rem 0;
+    margin: 1.2rem 0;
     font-size: 1.6rem;
     color: var(--neutral-very-dark-blue);
 }
@@ -120,6 +120,7 @@ p{
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
+    display: none;
 }
 
 .nav-header{
@@ -281,17 +282,14 @@ p{
 
 .selected{
     border-radius: 0;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--primary-soft-red);
     font-weight: bold;
 }
-
-/**
-* TODO : Add this class to features with Js
-**/
 
 .hidden{
     display: none;
 }
+
 
 /**
 * ! Downloads Section Styles

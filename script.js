@@ -25,6 +25,21 @@ closeIcon.addEventListener("click", closeMobileNavigation);
  * TODO : DO Feature Selection
  * **/
 
+const featureBtn = document.getElementsByClassName("feature-btn");
+const feature = document.getElementsByClassName("feature");
+
+function showFeature(id) {
+  for (i = 0; i < 3; i++) {
+    if (i === id) {
+      featureBtn[i].classList.add("selected");
+      feature[i].classList.remove("hidden");
+    } else {
+      featureBtn[i].classList.remove("selected");
+      feature[i].classList.add("hidden");
+    }
+  }
+}
+
 /**
  * TODO : Make FAQ Accordion
  * **/
