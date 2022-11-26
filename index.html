@@ -68,6 +68,14 @@
       <div class="container">
         <!-- Logo -->
         <img src="./images/logo-bookmark.svg" alt="BOOKMARK logo" />
+
+        <!-- Desktop Menu -->
+        <ul class="desktop-menu">
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><button class="login-btn">LOGIN</button></li>
+        </ul>
         <!-- Hamburger Icon -->
         <img
           id="hamburgerIcon"
@@ -87,7 +95,7 @@
               src="./images/illustration-hero.svg"
               alt="hero illustration image"
             />
-            <div class="bg"></div>
+            <div class="bg-pattern-hero"></div>
           </div>
           <div class="hero-section-text-container">
             <h1>A Simple Bookmark Manager</h1>
@@ -134,54 +142,65 @@
           </div>
           <!-- Feature 1 -->
           <div class="feature">
-            <div class="feature-illustration-container">
-              <img
-                src="./images/illustration-features-tab-1.svg"
-                alt="illustration image"
-              />
-            </div>
-            <div class="feature-text-container">
-              <h2>Bookmark in one click</h2>
-              <p>
-                Organize your bookmarks however you like. Our simple
-                drag-and-drop interface gives you complete control over how you
-                manage your favourite sites.
-              </p>
-              <button class="more-info-btn">more info</button>
+            <div class="feature-container">
+              <div class="feature-illustration-container">
+                <img
+                  src="./images/illustration-features-tab-1.svg"
+                  alt="illustration image"
+                />
+                <div class="bg-pattern-features"></div>
+              </div>
+              <div class="feature-text-container">
+                <h2>Bookmark in one click</h2>
+                <p>
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <button class="more-info-btn">more info</button>
+              </div>
             </div>
           </div>
           <!-- Feature 2 -->
           <div class="feature hidden">
-            <div class="feature-illustration-container">
-              <img
-                src="./images/illustration-features-tab-2.svg"
-                alt="illustration image"
-              />
-            </div>
-            <div class="feature-text-container">
-              <h2>Intelligent search</h2>
-              <p>
-                Our powerful search feature will help you find saved sites in no
-                time at all. No need to trawl through all of your bookmarks.
-              </p>
-              <button class="more-info-btn">more info</button>
+            <div class="feature-container">
+              <div class="feature-illustration-container">
+                <img
+                  src="./images/illustration-features-tab-2.svg"
+                  alt="illustration image"
+                />
+                <div class="bg-pattern-features"></div>
+              </div>
+              <div class="feature-text-container">
+                <h2>Intelligent search</h2>
+                <p>
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <button class="more-info-btn">more info</button>
+              </div>
             </div>
           </div>
           <!-- Feature 3 -->
           <div class="feature hidden">
-            <div class="feature-illustration-container">
-              <img
-                src="./images/illustration-features-tab-3.svg"
-                alt="illustration image"
-              />
-            </div>
-            <div class="feature-text-container">
-              <h2>Share your bookmarks</h2>
-              <p>
-                Easily share your bookmarks and collections with others. Create
-                a shareable link that you can send at the click of a button.
-              </p>
-              <button class="more-info-btn">more info</button>
+            <div class="feature-container">
+              <div class="feature-illustration-container">
+                <img
+                  src="./images/illustration-features-tab-3.svg"
+                  alt="illustration image"
+                />
+                <div class="bg-pattern-features"></div>
+              </div>
+              <div class="feature-text-container">
+                <h2>Share your bookmarks</h2>
+                <p>
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <button class="more-info-btn">more info</button>
+              </div>
             </div>
           </div>
         </div>
@@ -196,7 +215,7 @@
             you’ve got a favourite you’d like us to prioritize.
           </p>
           <div class="browsers-container">
-            <div class="browser">
+            <div class="browser chrome">
               <img src="./images/logo-chrome.svg" alt="Chrome logo" />
               <div class="add">Add to Chrome</div>
               <div class="version">Minimum version 62</div>
@@ -209,7 +228,7 @@
                 Add & Install Extension
               </button>
             </div>
-            <div class="browser">
+            <div class="browser firefox">
               <img src="./images/logo-firefox.svg" alt="Firefox logo" />
               <div class="add">Add to Firefox</div>
               <div class="version">Minimum version 55</div>
@@ -222,7 +241,7 @@
                 Add & Install Extension
               </button>
             </div>
-            <div class="browser">
+            <div class="browser opera">
               <img src="./images/logo-opera.svg" alt="Opera logo" />
               <div class="add">Add to Opera</div>
               <div class="version">Minimum version 46</div>
